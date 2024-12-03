@@ -1,0 +1,96 @@
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url(./fonts/Figtree/Figtree-VariableFont_wght.ttf);
+}
+
+body {
+    height: 100svh;
+    width: 100svw;
+    container: body / inline-size;
+    margin: 0;
+    background: var(--yellow);
+    color: var(--gray-500);
+    font-family: 'Figtree';
+    font-weight: 500;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    min-height: 100cqh;
+    width: 100cqw;
+    container: main / inline-size;
+}
+
+section[class="card"] {
+    min-height: 40cqh;
+    width: 30cqw;
+    background: white;
+    display: grid;
+    container: card / inline-size;
+    padding: 20px;
+    border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 10px 15px 0px black;
+    grid-template-rows: 25cqh auto auto auto auto;
+    gap: 10px;
+}
+
+section[class="image-container"] svg {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+section[class="tag"] {
+    display: grid;
+    place-items: center;
+    width: min-content;
+    height: min-content;
+    color: var(--gray-950);
+    background: var(--yellow);
+    padding: 20px;
+    font-weight: 800;
+}
+
+section[class="card"] h2 {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+section[class="card"] h1 {
+    font-size: 1.8em;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+    color: var(--gray-950);
+}
+
+section[class="author-details"] {
+    display: flex;
+    place-items: center;
+    font-weight: 800;
+    column-gap: 20px;
+    color: var(--gray-950);
+}
+
+svg[id="svgs"] {
+    display: none;
+}
+div[class="attribution"] {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+}
+@container main (inline-size < 1000px) {
+    section[class="card"] {
+        width: 80cqw;
+    }
+}

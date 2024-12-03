@@ -25,6 +25,8 @@ main {
     place-items: center;
     min-height: 100cqh;
     width: 100cqw;
+    max-width: 1440px;
+    margin:auto;
     container: main / inline-size;
 }
 

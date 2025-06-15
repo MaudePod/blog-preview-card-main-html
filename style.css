@@ -16,13 +16,13 @@ body {
     margin: 0;
     background: var(--yellow);
     color: var(--gray-500);
-    font-family: 'Figtree';
+    font-family: 'Figtree',sans-serif;
     font-weight: 500;
 }
 
 main {
     display: grid;
-    place-items: center;
+    align-items: center;
     min-height: 100cqh;
     width: 100cqw;
     max-width: 1440px;
@@ -61,7 +61,7 @@ section[class="tag"] {
     font-weight: 800;
 }
 
-section[class="card"] h2 {
+span[class="date-published"]{
     font-size: 1em;
     font-weight: 500;
 }
